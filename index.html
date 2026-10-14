@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joel Chen</title>
+  <!-- EDIT: one-sentence description for search results / link previews -->
+  <meta name="description" content="Joel Chen — portfolio. [One-line description of Joel's work.]">
+  <meta property="og:title" content="Joel Chen">
+  <meta property="og:description" content="[One-line description of Joel's work.]">
+  <meta property="og:url" content="https://joelchen.com/">
+  <meta property="og:type" content="website">
+  <!-- EDIT: add assets/og.jpg (1200×630) for link previews -->
+  <meta property="og:image" content="https://joelchen.com/assets/og.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ===== Header ===== -->
+    <header class="site-header">
+      <div class="id">
+        <!-- EDIT: replace with <img src="assets/avatar.jpg" alt="Joel Chen"> inside this div -->
+        <div class="avatar ph" data-label="Photo"></div>
+        <div>
+          <div class="id-name">Joel Chen</div>
+          <!-- EDIT: email -->
+          <a class="mono" href="mailto:hello@joelchen.com">hello@joelchen.com</a>
+        </div>
+      </div>
+      <nav class="icons" aria-label="Links">
+        <!-- EDIT: LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+        </a>
+        <a href="assets/cv.pdf" target="_blank" aria-label="CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h9l3 3v15H6z"/><path d="M9 9h6M9 13h6M9 17h4"/></svg>
+        </a>
+        <a href="#contact" aria-label="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <!-- EDIT: Joel's titles, one per line -->
+      <h1>[Role] &amp;<br>[Role] &amp;<br>[Third Role]</h1>
+      <div class="hero-foot">
+        <!-- EDIT: two short lines of intro -->
+        <p class="hero-intro">[One sentence about what Joel explores or makes.]<br>[Currently X @ Y. Previously @ Z.]</p>
+        <a class="explore" href="#work">
+          <span class="mono">Explore</span>
+          <span class="explore-btn" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 9 6 6 6-6"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Work =====
+         Each card links to projects/project-N.html.
+         EDIT: title, note, tags, year. Replace the .ph div with
+         <img class="media" src="assets/project-N/cover.jpg" alt="..." style="object-fit:cover;width:100%;height:100%"> -->
+    <section id="work" class="work" aria-label="Selected work">
+      <a class="project-card card reveal" href="projects/project-1.html">
+        <div class="media-frame"><div class="media ph" data-label="Project 1 cover — assets/project-1/cover.jpg"></div></div>
+        <div class="info">
+          <h2>[Project One Title]</h2>
+          <p class="note">[One line: what it is, where it was shown or published.]</p>
+          <p class="mono">[Tag], [Tag] · 2026</p>
+          <span class="arrow">View project →</span>
+        </div>
+      </a>
+
+      <a class="project-card card reveal" href="projects/project-2.html">
+        <div class="media-frame"><div class="media ph" data-label="Project 2 cover — assets/project-2/cover.jpg"></div></div>
+        <div class="info">
+          <h2>[Project Two Title]</h2>
+          <p class="note">[One line: what it is, where it was shown or published.]</p>
+          <p class="mono">[Tag], [Tag] · 2025</p>
+          <span class="arrow">View project →</span>
+        </div>
+      </a>
+
+      <a class="project-card card reveal" href="projects/project-3.html">
+        <div class="media-frame"><div class="media ph" data-label="Project 3 cover — assets/project-3/cover.jpg"></div></div>
+        <div class="info">
+          <h2>[Project Three Title]</h2>
+          <p class="note">[One line: what it is, where it was shown or published.]</p>
+          <p class="mono">[Tag], [Tag] · 2025</p>
+          <span class="arrow">View project →</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- ===== About + Experience ===== -->
+    <section id="about" class="about">
+      <div class="side-stack">
+        <!-- EDIT: replace with <img src="assets/about.jpg" alt="Joel Chen" style="width:100%;height:100%;object-fit:cover"> -->
+        <div class="about-photo ph reveal" data-label="About photo — assets/about.jpg"></div>
+        <!-- EDIT: logos of schools / companies (swap each .ph for an <img>) -->
+        <div class="logos card reveal">
+          <div class="ph" data-label="Logo"></div>
+          <div class="ph" data-label="Logo"></div>
+          <div class="ph" data-label="Logo"></div>
+          <div class="ph" data-label="Logo"></div>
+          <div class="ph" data-label="Logo"></div>
+        </div>
+      </div>
+
+      <div class="side-stack">
+        <div class="about-text card reveal">
+          <span class="label">About</span>
+          <!-- EDIT: bio -->
+          <h2>Hi, I'm Joel Chen<br>[a short descriptor]</h2>
+          <p>[A sentence about what Joel is passionate about.]</p>
+          <p>[A sentence about the kind of work Joel does and how.]</p>
+          <p>[A sentence about what motivates Joel.]</p>
+          <p class="aside mono">(currently [X])<br>(prev @ [Y])<br>(based in [City])<br>(loves [a], [b], [c])</p>
+        </div>
+
+        <div class="experience card reveal">
+          <span class="label">Experience</span>
+          <!-- EDIT: roles, newest first. Copy an <li> to add more. -->
+          <ol class="timeline">
+            <li><div class="mono">2025 – Present</div><div class="role">[Role]</div><div class="org">[Organization]</div></li>
+            <li><div class="mono">2024 – 2025</div><div class="role">[Role]</div><div class="org">[Organization]</div></li>
+            <li><div class="mono">2023 – 2024</div><div class="role">[Role]</div><div class="org">[Organization]</div></li>
+            <li><div class="mono">Summer 2023</div><div class="role">[Role]</div><div class="org">[Organization]</div></li>
+          </ol>
+          <!-- EDIT: add assets/cv.pdf -->
+          <a class="cv-link" href="assets/cv.pdf" target="_blank">Download CV
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="contact card reveal">
+      <svg class="doodle d1" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="40" cy="40" r="32"/><path d="M28 32v2M50 32v2M26 48c8 10 22 10 30 0"/></svg>
+      <svg class="doodle d2" viewBox="0 0 70 70" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M38 6 18 38h16l-6 26 24-36H36z"/></svg>
+      <svg class="doodle d3" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 3v8M18 25v8M3 18h8M25 18h8M8 8l5 5M23 23l5 5M28 8l-5 5M8 28l5-5"/></svg>
+      <svg class="doodle d4" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 30c6-14 10-14 14 0s8 14 14 0"/></svg>
+      <!-- EDIT: closing line + email -->
+      <h2>[A short closing line]<br>[that invites people in.]</h2>
+      <a class="cta" href="mailto:hello@joelchen.com">Let's talk</a>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer mono">
+      <span>© <span data-year>2026</span> Joel Chen</span>
+      <span>Thanks for stopping by</span>
+      <a href="mailto:hello@joelchen.com">hello@joelchen.com</a>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
